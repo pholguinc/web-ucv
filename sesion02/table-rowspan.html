@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=
+            , initial-scale=1.0">
+        <title>Tables rowspan y colspan</title>
+    </head>
+    <body bgcolor="aqua">
+        <h2>Ejemplo de colspan y rowspan en tablas</h2>
+
+        <table border="1px" width="100%">
+
+            <thead>
+                <tr>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Distrito</th>
+                    <th>Profesión</th>
+                    <th>Hobby</th>
+                </tr>
+            </thead>
+
+            <tr>
+                <td>Pedro</td>
+                <td>Ramírez</td>
+                <td>Pte. Piedra</td>
+                <td rowspan="2" bgcolor="green">Ing. Sistemas</td>
+                <td>Cantar</td>
+            </tr>
+
+            <tr>
+                <td>Ana</td>
+                <td>Días</td>
+                <td>Jesús Maria</td>
+                <td rowspan="2" bgcolor="pink">Bailar</td>
+            </tr>
+
+            <tr>
+                <td>Rosa</td>
+                <td>Ventura</td>
+                <td rowspan="3" bgcolor="orange">Lince</td>
+                <td>Contadora</td>
+            </tr>
+
+            <tr>
+                <td>Juan</td>
+                <td>Chávez</td>
+                <td colspan="2" bgcolor="silver">Abogado Bailarín</td>
+            </tr>
+
+            <tr>
+                <td>Carlos</td>
+                <td>Tineo</td>
+                <td>Médico</td>
+                <td rowspan="2" bgcolor="red">Fútbol</td>
+            </tr>
+
+            <tr>
+                <td>Diego</td>
+                <td>Ruiz</td>
+                <td>Chorrillos</td>
+                <td rowspan="2" bgcolor="maroon">Ing. Civil</td>
+            </tr>
+
+            <tr>
+                <td>Luci</td>
+                <td colspan="2" bgcolor="blue">Menez</td>
+                <td>Bailar</td>
+            </tr>
+
+
+        </table>
+    </body>
+</html>

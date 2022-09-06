@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas con HTML</title>
+</head>
+<body bgcolor="aqua">
+    
+    <center>
+        <h2>Construyendo una tablas con HTML</h2>
+    </center>
+
+    <center>
+        <table border="1px" bgcolor="gold" width="100%">
+            <thead bgcolor="silver">
+                <td>ID</td>
+                <td>Nombres</td>
+                <td>Apellidos</td>
+                <td>Correo</td>
+                <td>Profesión</td>
+                <td>Distrito</td>
+                <td>Acciones</td>
+            </thead>
+            <tbody>
+                <tr align="center">
+                    <td>01</td>
+                    <td>Pedro</td>
+                    <td>Holguín</td>
+                    <td>holguinpedro90@gmail.com</td>
+                    <td>Ingeniería de Sistemas</td>
+                    <td rowspan="2">Satipo</td>
+                    <td>
+                        <button>Ver</button>
+                        <button>Editar</button>
+                        <button>Eliminar</button>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>02</td>
+                    <td>Pablo</td>
+                    <td>Rodriguez</td>
+                    <td>pablorod@gmail.com</td>
+                    <td rowspan="4">Contadores</td>
+                    <td>
+                        <button>Ver</button>
+                        <button>Editar</button>
+                        <button>Eliminar</button>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>03</td>
+                    <td>Cinthia</td>
+                    <td>Suarez</td>
+                    <td>cinthiasu@gmail.com</td>
+                    <td>Trujillo</td>
+                    <td>
+                        <button>Ver</button>
+                        <button>Editar</button>
+                        <button>Eliminar</button>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>04</td>
+                    <td colspan="3">Marcos Estrada su correo es: marcosestrada@gmail.com</td>
+                    <td>Huancayo</td>
+                    <td>
+                        <button>Ver</button>
+                        <button>Editar</button>
+                        <button>Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+    
+</body>
+</html>
