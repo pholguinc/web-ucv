@@ -1,0 +1,16 @@
+h1{
+    color: darkgreen;
+    text-align: center;
+    background-color: aquamarine;
+    font-size: 75px;
+    border: 5px solid rgb(255, 183, 0);
+    padding: 25px;
+}
+
+p{
+    color: blue;
+}
+
+body{
+    background-color: darkturquoise;
+}
