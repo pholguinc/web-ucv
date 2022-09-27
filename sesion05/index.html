@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+            crossorigin="anonymous">
+
+        <title>Hello, world!</title>
+    </head>
+    <body>
+        <h1 class="text-center">Ingeniería Web</h1>
+
+        <div class="container">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left"
+                                type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                Información Personal
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse"
+                        aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary"
+                                data-toggle="modal"
+                                data-target="#staticBackdrop">
+                                Registrar Alumno
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop"
+                                data-backdrop="static" data-keyboard="false"
+                                tabindex="-1"
+                                aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title"
+                                                id="staticBackdropLabel">Fomrulario
+                                                del Alumno</h5>
+                                            <button type="button" class="close"
+                                                data-dismiss="modal"
+                                                aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!--Start form-->
+                                            <form>
+                                                <div class="form-group">
+                                                    <label>Nombre</label>
+                                                    <input type="text"
+                                                        class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Apellidos</label>
+                                                    <input type="text"
+                                                        class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Carrera Profesional</label>
+                                                    <input type="text"
+                                                        class="form-control">
+                                                </div>
+                                            </form>
+                                            <!--End form-->
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn
+                                                btn-secondary"
+                                                data-dismiss="modal">Cerrar</button>
+                                            <button type="button" class="btn
+                                                btn-primary">Guardar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left
+                                collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Información Académica
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse"
+                        aria-labelledby="headingTwo"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Some placeholder content for the second accordion
+                            panel. This panel is hidden by default.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left
+                                collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseThree"
+                                aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Información Familiar
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse"
+                        aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            And lastly, the placeholder content for the third
+                            and final accordion panel. This panel is hidden by
+                            default.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left
+                                collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseFour"
+                                aria-expanded="false"
+                                aria-controls="collapseFour">
+                                Información laboral
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse"
+                        aria-labelledby="headingFour"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Some placeholder content for the second accordion
+                            panel. This panel is hidden by default.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
