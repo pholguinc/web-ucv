@@ -1,3 +1,7 @@
+<?php
+include_once './conexion.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,18 +32,25 @@
                     <th>DNI</th>
                     <th>Dirección</th>
                     <th>Fecha de Nacimiento</th>
-                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Tiger Nixon</td>
-                    <td>System Architect</td>
-                    <td>Edinburgh</td>
-                    <td>61</td>
-                    <td>2011-04-25</td>
-                    <td>$320,800</td>
-                </tr>
+                <?php
+                $sql = "SELECT * FROM usuario";
+                $ejecutar = mysqli_query($conexion, $sql);
+                while ($fila = mysqli_fetch_assoc($ejecutar)) {
+                ?>
+                    <tr>
+                        <td><?php echo $fila['nombre']; ?></td>
+                        <td><?php echo $fila['apellido']; ?></td>
+                        <td><?php echo $fila['dni']; ?></td>
+                        <td><?php echo $fila['direccion']; ?></td>
+                        <td><?php echo $fila['fecha_nac']; ?></td>
+                    </tr>
+                    <?php
+                        }
+                    ?>
+                ?>
 
             </tbody>
             <tfoot>
@@ -49,7 +60,6 @@
                     <th>DNI</th>
                     <th>Dirección</th>
                     <th>Fecha de Nacimiento</th>
-                    <th>Acciones</th>
                 </tr>
             </tfoot>
         </table>
